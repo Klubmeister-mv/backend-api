@@ -21,6 +21,7 @@ app.set("secretKey", "1863")
 
 app.use(cors({
   origin: FRONT_URL, // Cambia esto por la URL de tu frontend desde la variable de entorno
+  credentials: true,
   methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Métodos permitidos
   allowedHeaders: ['Content-Type', 'x-access-token'], // Headers permitidos
 }));
